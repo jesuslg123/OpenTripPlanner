@@ -115,15 +115,15 @@ otp.config = {
     // maxZoom : 20,
     
     /* Whether the map should be moved to contain the full itinerary when a result is received. */
-    zoomToFitResults    : false,
+    zoomToFitResults    : true,
 
     /**
      * Site name / description / branding display options
      */
 
-    siteName            : "My OTP Instance",
-    siteDescription     : "An OpenTripPlanner deployment.",
-    logoGraphic         : 'images/otp_logo_darkbg_40px.png',
+    siteName            : "GranadaBus - Planificador de Rutas",
+    siteDescription     : "GranadaBus - Planificador de Rutas",
+    logoGraphic         : 'images/granadabus.png',
     // bikeshareName    : "",
     //Enable this if you want to show frontend language chooser
     showLanguageChooser : true,
@@ -131,7 +131,7 @@ otp.config = {
     showLogo            : true,
     showTitle           : true,
     showModuleSelector  : true,
-    metric              : false,
+    metric              : true,
 
 
     /**
@@ -202,7 +202,7 @@ otp.config = {
      */    
      
     timeFormat  : "h:mma",
-    dateFormat  : "MMM Do YYYY"
+    dateFormat  : "YYYY Do MMM"
 
 };
 var options = {
@@ -210,7 +210,7 @@ var options = {
 	fallbackLng: 'en',
         nsseparator: ';;', //Fixes problem when : is in translation text
         keyseparator: '_|_',
-	preload: ['en'],
+	preload: ['es'],
         //TODO: Language choosing works only with this disabled
         /*lng: otp.config.locale_short,*/
         /*postProcess: 'add_nekaj', //Adds | around every string that is translated*/
@@ -298,10 +298,10 @@ otp.config.modes = {
         "BUS,WALK"         : _tr("Bus Only"), 
     //TRANSLATORS: Travel by: mode of transport (Used in selection in Travel
     //Options widgets)
-        "TRAM,RAIL,SUBWAY,FUNICULAR,GONDOLA,WALK"       : _tr("Rail Only"), 
+       // "TRAM,RAIL,SUBWAY,FUNICULAR,GONDOLA,WALK"       : _tr("Rail Only"), 
     //TRANSLATORS: Travel by: mode of transport (Used in selection in Travel
     //Options widgets)
-        "AIRPLANE,WALK"       : _tr("Airplane Only"),
+       // "AIRPLANE,WALK"       : _tr("Airplane Only"),
     //TRANSLATORS: Travel by: mode of transport (Used in selection in Travel
     //Options widgets)
         "BICYCLE"             : _tr('Bicycle Only'),
@@ -316,7 +316,7 @@ otp.config.modes = {
         "CAR"                 : _tr('Drive Only'),
     //TRANSLATORS: Travel by: mode of transport (Used in selection in Travel
     //Options widgets)
-    "CAR_PARK,WALK,TRANSIT"     : _tr('Park and Ride'),
+    //"CAR_PARK,WALK,TRANSIT"     : _tr('Park and Ride'),
     //TRANSLATORS: Travel by: mode of transport (Used in selection in Travel
     //Options widgets) http://en.wikipedia.org/wiki/Park_and_ride#Kiss_and_ride
     "CAR,WALK,TRANSIT"          : _tr('Kiss and Ride'),
