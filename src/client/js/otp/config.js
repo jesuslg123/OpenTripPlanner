@@ -10,7 +10,7 @@ otp.config = {
     //This is default locale when wanted locale isn't found
     //Locale language is set based on wanted language in url >
     //user cookie > language set in browser (Not accept-language) 
-    locale: otp.locale.English,
+    locale: otp.locale.Spanish,
 
     //All avalible locales
     //key is translation name. Must be the same as po file or .json file
@@ -201,7 +201,7 @@ otp.config = {
      * Formats to use for date and time displays, expressed as ISO-8601 strings.
      */    
      
-    timeFormat  : "h:mma",
+    timeFormat  : "HH:MM",
     dateFormat  : "YYYY Do MMM"
 
 };
@@ -319,11 +319,11 @@ otp.config.modes = {
     //"CAR_PARK,WALK,TRANSIT"     : _tr('Park and Ride'),
     //TRANSLATORS: Travel by: mode of transport (Used in selection in Travel
     //Options widgets) http://en.wikipedia.org/wiki/Park_and_ride#Kiss_and_ride
-    "CAR,WALK,TRANSIT"          : _tr('Kiss and Ride'),
+    //"CAR,WALK,TRANSIT"          : _tr('Kiss and Ride'),
     //TRANSLATORS: Travel by: mode of transport (Used in selection in Travel
     //Options widgets) (Park bicycle at Public transit station and take a
     //transit
-    "BICYCLE_PARK,WALK,TRANSIT" : _tr('Bike and Ride'),
+    //"BICYCLE_PARK,WALK,TRANSIT" : _tr('Bike and Ride'),
     //uncomment only if bike rental exists in a map
     // TODO: remove this hack, and provide code that allows the mode array to be configured with different transit modes.
     //       (note that we've been broken for awhile here, since many agencies don't have a 'Train' mode either...this needs attention)
